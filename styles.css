@@ -161,5 +161,22 @@ textarea {
 }
 
 .botao-publicar {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border:  none;
+    position: relative;
+}
 
+.botao-publicar::after {
+    content: "";
+    background-image: url("img/arrow_forward2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 8px;
 }
